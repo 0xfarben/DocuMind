@@ -178,7 +178,7 @@ if question:
             with st.spinner("Searching documents and generating an answer..."):
                 answer, sources = st.session_state.rag.search_with_sources(
                     question,
-                    top_k=5,
+                    top_k=10,
                 )
 
             st.markdown(answer)
