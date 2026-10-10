@@ -22,3 +22,5 @@ chromadb
 
 python-dotenv
 langchain-groq
+
+streamlit
