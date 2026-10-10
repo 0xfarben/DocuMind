@@ -1,0 +1,24 @@
+langchain
+langchain-core
+langchain-community
+pypdf
+pymupdf
+
+# LangChain moved its text-splitting utilities into a dedicated standalone package
+langchain-text-splitters
+
+# To log the progress of DirectoryLoader you need to install tqdm, `pip install tqdm`
+tqdm
+
+# IPython Kernel for Jupyter Notebook
+ipykernel
+
+# open source embedding models
+sentence-transformers
+
+# vector stores
+faiss-cpu
+chromadb
+
+python-dotenv
+langchain-groq
