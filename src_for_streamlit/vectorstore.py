@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 from typing import List, Any, Callable, Optional
 from sentence_transformers import SentenceTransformer
-from src.embedding import EmbeddingPipeline
+from src_for_streamlit.embedding import EmbeddingPipeline
 
 
 ProgressCallback = Optional[Callable[[str, float, str], None]]

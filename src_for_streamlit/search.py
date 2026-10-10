@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from src.vectorstore import FaissVectorStore
+from src_for_streamlit.vectorstore import FaissVectorStore
 from langchain_groq import ChatGroq
 
 load_dotenv()
@@ -15,7 +15,7 @@ class RAGSearch:
         meta_path = os.path.join(persist_dir, "metadata.pkl")
 
         if not (os.path.exists(faiss_path) and os.path.exists(meta_path)):
-            from data_loader import load_all_documents
+            from src_for_streamlit.data_loader import load_all_documents
             docs = load_all_documents("data")
             self.vectorstore.build_from_documents(docs)
         else:
