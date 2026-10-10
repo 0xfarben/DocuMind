@@ -17,7 +17,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title(f"{icon} DocuMind - Document Q&A with RAG")
+st.title("DocuMind - Document Q&A with RAG")
 st.caption("Ask questions and get answers grounded in your documents.")
 
 # Session state
