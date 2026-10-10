@@ -34,7 +34,10 @@ class FaissVectorStore:
         embeddings = emb_pipe.embed_chunks(chunks)
 
         metadatas = [
-            {"text": chunk.page_content} 
+            {
+                **chunk.metadata,
+                "text": chunk.page_content
+            }
             for chunk in chunks
         ]
 
