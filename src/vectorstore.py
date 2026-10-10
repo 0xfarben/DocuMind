@@ -36,6 +36,8 @@ class FaissVectorStore:
         metadatas = [
             {
                 **chunk.metadata,
+                "source": chunk.metadata.get("source", "Unknown source"),
+                "page": chunk.metadata.get("page"),
                 "text": chunk.page_content
             }
             for chunk in chunks
