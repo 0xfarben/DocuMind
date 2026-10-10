@@ -24,3 +24,4 @@ python-dotenv
 langchain-groq
 
 streamlit
+Pillow

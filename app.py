@@ -7,15 +7,17 @@ import streamlit as st
 from src_for_streamlit.data_loader import load_all_documents
 from src_for_streamlit.vectorstore import FaissVectorStore
 from src_for_streamlit.search import RAGSearch
+from PIL import Image
 
+icon = Image.open("assets/icon.png")
 
 st.set_page_config(
     page_title="DocuMind | RAG Assistant",
-    page_icon="📚",
+    page_icon=icon,
     layout="wide",
 )
 
-st.title("📚 DocuMind")
+st.title(f"{icon} DocuMind - Document Q&A with RAG")
 st.caption("Ask questions and get answers grounded in your documents.")
 
 # Session state
