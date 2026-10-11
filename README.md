@@ -226,3 +226,63 @@ in your source if you have changed them.
     are authorized to process it with that service.
 -   If you change the embedding model, rebuild the corresponding vector
     index so document and query embeddings remain compatible.
+
+
+## Evaluation
+
+DocuMind was manually evaluated using a **30-question test set** designed to check answer quality, source grounding, cross-document retrieval, and handling of questions that the documents do not answer.
+
+### Test documents
+
+The evaluation used two PDFs:
+
+- `Introduction to Machine Learning with Python.pdf`
+- `2023KS_Narasimhan-A_Beginner's_Handbook_to_DevOps.pdf`
+
+The questions tested both documents individually and together. The test set also included questions whose answers were not present in the documents, to check whether the system avoided unsupported answers.
+
+### Test-set breakdown
+
+| Category | Questions | What it checks |
+|---|---:|---|
+| Machine Learning | 15 | Answers grounded in the Machine Learning PDF |
+| DevOps | 8 | Answers grounded in the DevOps PDF |
+| Cross-document | 5 | Questions involving concepts from both PDFs |
+| Unanswerable | 2 | Whether the app avoids inventing information absent from the PDFs |
+| **Total** | **30** | |
+
+### Manual evaluation procedure
+
+1. Prepare the two PDFs and build the knowledge base in the Streamlit app.
+2. Ask each question from the test set.
+3. Check the generated answer against the source document(s).
+4. Check whether the displayed citation/source points to the relevant document.
+5. Observe the response time for each question.
+6. For unanswerable questions, check whether the response avoids presenting unsupported details as facts.
+
+### Observed results
+
+In the developer's manual test run, the reported results were:
+
+| Measure | Observed result |
+|---|---|
+| Questions tested | 30 |
+| Answer correctness | 30/30 reported correct |
+| Source/citation correctness | 30/30 reported correct |
+| Response latency | Reported under 5 seconds per question; most responses were around 3–5 seconds |
+
+**How to interpret these results:** These are results from a manually checked test set using the two PDFs above, not an automated benchmark or a guarantee of accuracy on other documents and questions. The evaluation was not an independent review. Latency can vary with network conditions, API response time, and deployment load. Re-run the same test set after significant changes to retrieval, prompts, embedding settings, or the LLM.
+
+### Reproducing the evaluation
+
+1. Run the app as described in [Method 2](#method-2-run-the-streamlit-web-app-using-apppy).
+2. Upload the two test PDFs and click **Build Knowledge Base**.
+3. Use the question set stored in `evaluation/test_questions.csv`.
+4. For each question, record the answer, expected source, whether the answer is supported, whether the citation is correct, and the response time.
+
+The CSV is a **manual test set**, not an automated test runner; results must be checked and recorded separately unless an evaluation script is added.
+
+## Ebook Links
+
+- [Introduction to Machine Learning with Python](https://www.nrigroupindia.com/e-book/Introduction%20to%20Machine%20Learning%20with%20Python%20(%20PDFDrive.com%20)-min.pdf)
+- [A Beginner's Handbook to DevOps](https://learning.dell.com/content/dam/dell-emc/documents/en-us/2023KS_Narasimhan-A_Beginner's_Handbook_to_DevOps.pdf)

@@ -1,0 +1,31 @@
+ID,Category,Question,Expected source,Evaluation notes
+1,Single-document,What is supervised learning?,Machine Learning PDF,Definition of supervised learning; labeled input-output examples.
+2,Single-document,What is unsupervised learning?,Machine Learning PDF,Definition of unsupervised learning; data without target labels.
+3,Single-document,What is the difference between supervised and unsupervised learning?,Machine Learning PDF,Correct distinction and any examples supported by the PDF.
+4,Single-document,What is the k-Nearest Neighbors (k-NN) algorithm?,Machine Learning PDF,Nearest training examples; classification/regression behavior.
+5,Single-document,How does k-NN make a classification prediction?,Machine Learning PDF,Majority vote among the k nearest neighbors.
+6,Single-document,What happens when k = 1 in k-NN?,Machine Learning PDF,Prediction uses the single nearest training example.
+7,Single-document,What is Ridge regression?,Machine Learning PDF,Definition and key properties described in the document.
+8,Single-document,Why is preprocessing important in a machine-learning workflow?,Machine Learning PDF,Relevant preprocessing purpose and examples from the PDF.
+9,Single-document,What is the difference between stemming and lemmatization?,Machine Learning PDF,Distinction as explained in the document.
+10,Single-document,What is grid search used for in machine learning?,Machine Learning PDF,Hyperparameter search/selection described by the source.
+11,Single-document,What is clustering?,Machine Learning PDF,"Grouping similar observations without predefined labels, if covered."
+12,Single-document,Explain k-means clustering and one limitation mentioned in the document.,Machine Learning PDF,How k-means groups data and a source-supported limitation.
+13,Single-document,"What is DBSCAN, and how does it handle noise?",Machine Learning PDF,"Density-based grouping and treatment of noise, if covered."
+14,Single-document,How can clustering be used to explore or visualize data?,Machine Learning PDF,Source-supported exploratory analysis or visualization use.
+15,Single-document,"What is dimensionality reduction, and why might it be useful?",Machine Learning PDF,Definition and source-supported purpose.
+16,Single-document,What does DevOps mean?,DevOps Handbook PDF,Relationship between development and operations; lifecycle/collaboration.
+17,Single-document,What are the main benefits of DevOps described in the handbook?,DevOps Handbook PDF,"Benefits such as release speed, productivity, collaboration, or quality where supported."
+18,Single-document,How does DevOps improve time to market?,DevOps Handbook PDF,Source-supported workflow/toolchain and delivery explanation.
+19,Single-document,How does DevOps support continuous integration and continuous delivery or deployment?,DevOps Handbook PDF,Practices and lifecycle details supported by the handbook.
+20,Single-document,What is DevSecOps?,DevOps Handbook PDF,Integration of security practices throughout the development lifecycle.
+21,Single-document,How can automated security checks support a DevOps workflow?,DevOps Handbook PDF,"Security checks/audits at pipeline stages, if covered."
+22,Single-document,What roles do communication and collaboration play in DevOps?,DevOps Handbook PDF,"Source-supported effects on silos, feedback, and delivery."
+23,Single-document,What future outlook or industry adoption of DevOps does the handbook describe?,DevOps Handbook PDF,Only claims and examples actually stated in the handbook.
+24,Cross-document,Compare supervised learning with DevOps.,Both PDFs,Explain that they address different domains; support each definition from its own source.
+25,Cross-document,Compare the benefits of DevOps with the applications of clustering.,Both PDFs,"DevOps delivery benefits and clustering applications, each supported by its own PDF."
+26,Cross-document,Explain k-NN and DevSecOps in one answer.,Both PDFs,"Accurate, separately supported explanations of both topics."
+27,Cross-document,How do machine-learning preprocessing and DevOps practices differ in their goals?,Both PDFs,Contrast preprocessing goals with software delivery/operations goals using source evidence.
+28,Cross-document,Compare the role of automation in DevOps with the use of algorithms in clustering.,Both PDFs,Ground each side in the documents; do not imply they are the same process.
+29,Unanswerable,What is the author's home address?,Neither PDF,Should state that the documents do not provide this information.
+30,Unanswerable,What is the author's current salary?,Neither PDF,Should state that the documents do not provide this information.
