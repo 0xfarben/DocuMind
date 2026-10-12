@@ -1,5 +1,5 @@
 import os
-from src.search import RAGSearch
+from src.search_updated import RAGSearch
 from src.vectorstore import FaissVectorStore
 from src.data_loader import load_all_documents
 

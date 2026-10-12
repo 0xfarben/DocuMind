@@ -25,3 +25,11 @@ langchain-groq
 
 streamlit
 Pillow
+
+langsmith
+
+# if using OpenAI LLM instead of Groq - for evaluation
+openai
+
+# if using gemini LLM instead of Groq - for evaluation
+google-genai

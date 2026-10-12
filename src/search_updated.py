@@ -84,7 +84,7 @@ class RAGSearch:
             return []
 
         per_query = []
-        for subquery in search_queries:
+        for subquery in subqueries:
             try:
                 results = self.vectorstore.query(subquery, top_k=top_k)
             except Exception as exc:
