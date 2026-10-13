@@ -223,6 +223,8 @@ The automated evaluation was run through LangSmith using four evaluators. The 30
 
 #### Metric score snapshot
 
+![Evaluation_Diagram](assets/Evaluation_Diagram.png)
+
 - Correctness:         `████████░░` 80.00%
 - Answer relevance:    `█████████░` 86.67%
 - Groundedness:        `█████████░` 86.67%

@@ -18,6 +18,8 @@ Each question is answered by the DocuMind RAG pipeline. Separate LLM-as-judge ev
 | **Groundedness** | Checks whether the answer is supported by the retrieved document content. |
 | **Retrieval relevance** | Checks whether the retrieved context is topically relevant to the question. |
 
+![Evaluation_Diagram](../assets/Evaluation_Diagram.png)
+
 The evaluation dataset contains 30 questions, including questions across the selected technical topics and questions that may be unanswerable from the available sources. Reference answers should be checked against the source PDFs before using scores in a report.
 
 ## How the evaluation works
